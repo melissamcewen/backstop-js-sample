@@ -2,43 +2,54 @@
   "id": "prod_test",
   "viewports": [
     {
-      "name": "phone",
+      "name": "XS",
       "width": 320,
       "height": 480
     },
     {
-      "name": "tablet_v",
-      "width": 568,
+      "name": "Smaller",
+      "width": 495,
       "height": 1024
     },
     {
-      "name": "tablet_h",
-      "width": 1024,
-      "height": 768
+      "name": "Small",
+      "width": 800,
+      "height": 1024
+    },
+    {
+      "name": "Medium",
+      "width": 1000,
+      "height": 1024
+    },
+    {
+      "name": "Larger",
+      "width": 1300,
+      "height": 1024
+    },
+    {
+      "name": "XL",
+      "width": 1500,
+      "height": 1024
     }
   ],
   "scenarios": [
     {
-      "label": "BackstopJS Homepage",
-      "url": "https://garris.github.io/BackstopJS/",
+      "label": "Website",
+      "url": "http://localhost:3000",
       "hideSelectors": [],
       "removeSelectors": [],
       "selectorExpansion": true,
       "selectors": [
-        ".jumbotron",
-        ".row.firstPanel",
-        ".firstPanel .col-sm-4:nth-of-type(2)",
-        ".firstPanel .col-sm-4:nth-of-type(3)",
-        ".firstPanel .col-sm-4:nth-of-type(4)",
-        ".secondPanel",
-        ".finalWords",
-        "footer"
+        ".jumbotron--top",
+        ".jumbotron--middle",
+        ".posadas__wrapper",
+        ".jumbotron--end"
       ],
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.1,
       "onBeforeScript": "onBefore.js",
-      "onReadyScript": "onReady.js"
+      "onReadyScript": null
     }
   ],
   "paths": {
@@ -51,5 +62,5 @@
   "casperFlags": [],
   "engine": "phantomjs",
   "report": ["browser"],
-  "debug": false
+  "debug": true
 }
