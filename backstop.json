@@ -1,5 +1,6 @@
 {
   "id": "prod_test",
+  "onBeforeScript": "onBefore.js",
   "viewports": [
     {
       "name": "XS",
@@ -34,7 +35,7 @@
   ],
   "scenarios": [
     {
-      "label": "Website",
+      "label": "Basic",
       "url": "http://localhost:3000",
       "hideSelectors": [],
       "removeSelectors": [],
@@ -47,9 +48,27 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.1,
-      "onBeforeScript": "onBefore.js",
+      "misMatchThreshold" : 1.8,
+      "onBeforeScript": null,
       "onReadyScript": null
+    },
+    {
+      "label": "Spanish",
+      "url": "http://localhost:3000",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        ".jumbotron--top",
+        ".jumbotron--middle",
+        ".posadas__wrapper",
+        ".jumbotron--end"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 1.8,
+      "onBeforeScript": null,
+      "onReadyScript": "onReady-spanish.js"
     }
   ],
   "paths": {
@@ -62,5 +81,5 @@
   "casperFlags": [],
   "engine": "phantomjs",
   "report": ["browser"],
-  "debug": true
+  "debug": false
 }

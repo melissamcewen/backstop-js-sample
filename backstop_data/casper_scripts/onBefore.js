@@ -8,6 +8,7 @@ module.exports = function(casper, scenario, vp) {
           'day': '06',
           'year': '1986'
        }, true);
-     }
+     };
   });
+
 };
