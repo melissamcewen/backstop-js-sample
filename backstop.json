@@ -5,7 +5,7 @@
     {
       "name": "XS",
       "width": 320,
-      "height": 480
+      "height": 780
     },
     {
       "name": "Smaller",
@@ -69,6 +69,21 @@
       "misMatchThreshold" : 1.8,
       "onBeforeScript": null,
       "onReadyScript": "onReady-spanish.js"
+    },
+    {
+      "label": "Modal 1",
+      "url": "http://localhost:3000",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectorExpansion": true,
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 1.8,
+      "onBeforeScript": null,
+      "onReadyScript": "onReady-modal1.js"
     }
   ],
   "paths": {
