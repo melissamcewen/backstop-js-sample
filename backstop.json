@@ -8,23 +8,8 @@
       "height": 780
     },
     {
-      "name": "Smaller",
-      "width": 495,
-      "height": 1024
-    },
-    {
-      "name": "Small",
-      "width": 800,
-      "height": 1024
-    },
-    {
       "name": "Medium",
       "width": 1000,
-      "height": 1024
-    },
-    {
-      "name": "Larger",
-      "width": 1300,
       "height": 1024
     },
     {
@@ -35,43 +20,7 @@
   ],
   "scenarios": [
     {
-      "label": "Basic",
-      "url": "http://localhost:3000",
-      "hideSelectors": [],
-      "removeSelectors": [],
-      "selectorExpansion": true,
-      "selectors": [
-        ".jumbotron--top",
-        ".jumbotron--middle",
-        ".posadas__wrapper",
-        ".jumbotron--end"
-      ],
-      "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 1.8,
-      "onBeforeScript": null,
-      "onReadyScript": null
-    },
-    {
-      "label": "Spanish",
-      "url": "http://localhost:3000",
-      "hideSelectors": [],
-      "removeSelectors": [],
-      "selectorExpansion": true,
-      "selectors": [
-        ".jumbotron--top",
-        ".jumbotron--middle",
-        ".posadas__wrapper",
-        ".jumbotron--end"
-      ],
-      "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 1.8,
-      "onBeforeScript": null,
-      "onReadyScript": "onReady-spanish.js"
-    },
-    {
-      "label": "Modal 1",
+      "label": "Loteria",
       "url": "http://localhost:3000",
       "hideSelectors": [],
       "removeSelectors": [],
@@ -83,7 +32,7 @@
       "delay": 500,
       "misMatchThreshold" : 1.8,
       "onBeforeScript": null,
-      "onReadyScript": "onReady-modal1.js"
+      "onReadyScript": "loteria.js"
     }
   ],
   "paths": {

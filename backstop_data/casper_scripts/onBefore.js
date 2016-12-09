@@ -6,7 +6,8 @@ module.exports = function(casper, scenario, vp) {
        this.fill('form.age-gate__form',{
           'month': '06',
           'day': '06',
-          'year': '1986'
+          'year': '1986',
+          'locale': 'en'
        }, true);
      };
 
